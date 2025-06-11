@@ -1,105 +1,101 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Exemplo de Site</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrofuch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <header class="header">
+        <div class="top-info">
+            <p>Sobre - agro</p>
+            <p>nome - Danieli V. Andrade</p>
+            <p>turma - 2°D</p>
+        </div>
+        <h1 class="logo-header">Agrofuch</h1>
+    </header>
 
-  <header>
-    <div class="logo-titulo">
-      <img src="img/agrinho2.jpg" alt="Logo com letra cursiva com uma arvore e um trator com o nome agrofish" />
-      <h1>agrofish, quem tem vive</h1>
-    </div>
-    <nav>
-      <ul class="menu">
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#" class="nav-item"><i class="fas fa-bars"></i> Menu</a></li>
+            <li><a href="#" class="nav-item">Conta</a></li>
+            <li><a href="#" class="nav-item">Contatos</a></li>
+            <li><a href="#" class="nav-item">Mídia</a></li>
+            <li><a href="#" class="nav-item">Compras</a></li>
+            <li><a href="#" class="nav-item">Venda</a></li>
+            <li><a href="#" class="nav-item user-icon"><i class="fas fa-user-circle"></i></a></li>
+        </ul>
     </nav>
-  </header>
 
-  <section class="titulo">
-    <h2>Bem-vindo ao nosso mundo!</h2>
-  </section>
+    <main class="main-content">
+        <h2 class="section-title">Agrofuch</h2>
+        <div class="search-bar">
+            <h3>Compra</h3>
+            <input type="text" placeholder="Pesquisar...">
+        </div>
 
-  <section class="banner-principal">
-    <img src="flor-esquerda.png" alt="Banner principal" />
-  </section>
+        <section class="product-grid">
+            <div class="product-item">
+                <div class="image-placeholder">
+                    <i class="fas fa-mountain"></i>
+                </div>
+                <input type="radio" name="product-selection" class="radio-button">
+            </div>
+            <div class="product-item">
+                <div class="image-placeholder">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <input type="radio" name="product-selection" class="radio-button">
+            </div>
+            <div class="product-item">
+                <div class="image-placeholder">
+                    <i class="fas fa-mountain"></i>
+                </div>
+                <input type="radio" name="product-selection" class="radio-button">
+            </div>
+            <div class="product-item">
+                <div class="image-placeholder">
+                    <i class="fas fa-mountain"></i>
+                </div>
+                <input type="radio" name="product-selection" class="radio-button">
+            </div>
+            <div class="product-item">
+                <div class="image-placeholder animal">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NzYgNTEyIj48IS0tISBGb250IEF3ZXNvbWUgUHJvIEZvbiBBd2Vzb21lICEgSHR0cHM6Ly9mb250YXdlc29tZS5jb20gTGljZW5zZSBbQ0NDIEJZIEZBLTQuMCBHZW5lcmFsXSBDb3B5cmlnaHQgMjAyNCBGb250IEF3ZXNvbWUgSW5jLiAtLT48cGF0aCBkPSJNNTAwLjcgMjEzLjlDMzgwLjUgMTM5LjYgMjMxLjIgMjcuOCAxOTMuMyA2LjJDMjY5LjQgMzAuMSAzMTcuOCAzNi45IDMzNyA0MC44QzQ1MS44IDYxLjcgNDg1LjcgMTE0IDUxMS4xIDE2Mi44QzUyOC40IDIyNC44IDU1NC4xIDI3Mi4xIDU3NiAzMDguMkM1NzUgMjA4LjYgNTE2LjcgMTM4LjIgNTAwLjcgMjEzLjl6TTI2Mi41IDExMi44QzI0MC42IDkxLjkgMTc2LjkgNDUuNiAxMjYuMiAxNS44QzExNy44IDIuNiAxMDcuNC0zLjEgOTcgMS41QzUyLjUgMjEuOCAyNy40IDQ5LjIgMTUgNzcuMUMyLjkgMTA0LjcgLjMgMTM1LjUgMCAxNjcuMEMxLjggMTc2LjkgMi44IDE4MS40IDYuMSAxODYuOEMxNS44IDIwMi40IDYxIDIxOS4yIDg0LjMgMjIyLjJDMTA3LjggMjI1LjMgMTM2LjYgMjA4LjggMTU3LjMgMTg3LjZDMjE0LjYgMTQ3LjMgMjUzLjggMTUwLjYgMjcyLjYgMTg2LjRDMjgwLjEgMjAwLjggMjY2LjkgMjI5LjIgMjUzLjUgMjM3LjJDMTkyLjYgMjczLjQgMTQyLjYgMjU5LjcgODkuNiAyMDQuN0MzNyAyMzUgMTcuMiAyNzcuMSAzLjggMzA3LjNDLTcuNiAzMzguMiAyLjQgMzcxLjQgMy45IDM3NS4yQzE1LjQgMzA2LjkgMjcuNiAyNjcuNiA0MC4zIDI0MS40QzQ1LjkgMjMwIDQ5LjEgMjE5LjQgNDkuMiAyMTIuNkM0OS43IDIwMS4yIDU3LjUgMTk5LjMgNjIuNSAyMDYuOEMxMTQuNiAyNzEgMTU1LjMgMjk4LjggMjAwLjEgMzA3LjNDMjMwLjMgMzExLjkgMjQ5LjMgMzA2LjUgMjY3LjcgMjg3LjZDMzE2LjIgMjQ3LjIgMzE1LjcgMTgyLjggMjc5LjkgMTQ1LjRDMjc2LjcgMTQwLjcgMjY4LjYgMTIzLjcgMjYyLjUgMTEyLjh6TTIzMS41IDMyNy41QzIzMC43IDMyOC41IDIzMC4xIDMyOS43IDIzMC4yIDMzMS4zQzI0Mi43IDM1OS40IDI3Mi43IDM4NC45IDMwNC43IDQxMi44QzI1Mi4yIDQ1NC41IDE1MS43IDQ5My42IDg2LjYgNTA1LjlDNjYgNTA5LjcgNDIuNiA0OTUuMSAzNC4yIDQ2Ni42QzI5LjcgNDUxLjMgMjYuMiA0NDQuMyAyNS42IDQzNy42QzI0LjUgNDIyLjMgMzIuNSA0MDcuMyA2Mi42IDM2My43QzYyLjcgMzY2LjIgNjIuOCAzNjguNiA2Mi45IDM3MS4yQzU5LjYgMzg3LjIgNTguOSAzOTYuNyA2MS4xIDQwMy4xQzc0LjMgNDQyLjMgMTA0IDQ1Ny4yIDE2MS41IDQ2My40QzE5Mi44IDQ2Ni44IDIxNS4yIDQ2NS40IDI0MS43IDQ0OS43QzI1Ny41IDQ0MC42IDI3MS4yIDQyOS40IDI4NiA0MTcuNEMzMDYuOSA0MDAuMyAzMjQuNCAzODUuMiAzNDIuNiAzNzAuNUMzNTcuNiAzNTguMSAzNjkgMzQ5LjQgMzczLjcgMzQ1LjVDMzgwLjYgMzM3LjkgMzgxLjggMzMwLjYgMzc0LjggMzIzLjFDMzU1LjYgMzAyLjMgMzMzLjkgMjg4LjIgMzA2LjIgMjc4LjZDMjcyLjMgMjY2LjUgMjUwLjcgMjc2LjIgMjMxLjUgMzI3LjV6TTMzMC4xIDUuOEMyNDMuNCAxMjEuMiAxOTguMSAyMTEuMyAxNjQuMSAyNTcuN0MxNzMuNyAyMzguOCAxNzcuNyAyMjYuOCAxNzcuNSAyMTkuN0MxNzcuNSAyMDcuOCAxNzIuMiAxOTUuNCAxNjEuNiAxODYuNEMxNTAuMyAxNzYuNyAxMzcuOCAxNjEuMSAxMzMuMiAxMzguNEMxMjcuNCAxMTAuNyAxNDMuNiA4My42IDE5My4zIDYgMzI0LjYgMTE1LjEgMzYwLjYgMjEyLjQgMzg5LjggMjU2LjNDMzkyLjIgMjU5LjYgMzkyLjUgMjYxLjEgMzkyLjcgMjYzQzQxNy4zIDI2OC45IDQyNy41IDI3MS4zIDQzNi42IDI3Mi43QzQwNS4yIDMwOC45IDM3Ni41IDMzNy4yIDM2MC42IDMzMi4zQzM0Ni45IDMyOC4yIDMzNS43IDI5NS40IDMzMC4xIDUuOHoiPjwvcGF0aD48L3N2Zz4=" alt="Pig icon" style="width: 100%; height: 100%;">
+                </div>
+                <input type="radio" name="product-selection" class="radio-button">
+            </div>
+            <div class="product-item">
+                <div class="image-placeholder">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <input type="radio" name="product-selection" class="radio-button">
+            </div>
+            <div class="product-item">
+                <div class="image-placeholder">
+                    <i class="fas fa-tractor"></i>
+                </div>
+                <input type="radio" name="product-selection" class="radio-button">
+            </div>
+            <div class="product-item">
+                <div class="image-placeholder">
+                    <i class="fas fa-warehouse"></i>
+                </div>
+                <input type="radio" name="product-selection" class="radio-button">
+            </div>
+            <div class="product-item">
+                <div class="image-placeholder">
+                    <i class="fas fa-hand-holding-water"></i>
+                </div>
+                <input type="radio" name="product-selection" class="radio-button">
+            </div>
+        </section>
+    </main>
 
-  <section class="conteudo invertido">
-    <div class="texto">
-      <h3>Seção 1</h3>
-      <p>Descrição da seção 1.</p>
-    </div>
-    <img src="https://via.placeholder.com/400x250" alt="Imagem seção 1" />
-  </section>
-
-  <section class="conteudo">
-    <img src="https://via.placeholder.com/400x250" alt="Imagem seção 2" />
-    <div class="texto">
-      <h3>Seção 2</h3>
-      <p>Descrição da seção 2.</p>
-    </div>
-  </section>
-
-  <section class="conteudo invertido">
-    <div class="texto">
-      <h3>Seção 3</h3>
-      <p>Descrição da seção 3.</p>
-    </div>
-    <img src="https://via.placeholder.com/400x250" alt="Imagem seção 3" />
-  </section>
-
-  <section class="galeria">
-    <h2>Galeria de Imagens</h2>
-    <div class="grid-galeria">
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 1" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 2" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 3" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 4" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 5" />
-      <img src="https://via.placeholder.com/200" alt="Imagem galeria 6" />
-    </div>
-  </section>
-
-  <section class="seis-imagens">
-    <h2>Destaques</h2>
-    <div class="grid-destaques">
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 1" />
-        <p>Título 1</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 2" />
-        <p>Título 2</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 3" />
-        <p>Título 3</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 4" />
-        <p>Título 4</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 5" />
-        <p>Título 5</p>
-      </div>
-      <div class="item">
-        <img src="https://via.placeholder.com/150" alt="Destaque 6" />
-        <p>Título 6</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
-  </footer>
-
+    <footer class="footer">
+        <p>&copy; 2023 Agrofuch</p>
+    </footer>
 </body>
 </html>
